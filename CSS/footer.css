@@ -1,0 +1,462 @@
+
+@font-face{
+    font-family:BLOGGER_1983_BRUSH;
+    src:url(BLOGGER_1983_BRUSH.ttf);
+}
+@font-face{
+    font-family:Raleway;
+    src:url(Raleway-Light.ttf);
+}
+
+
+/* must declare 0 margins on everything, also for main layout components
+use padding, not vertical margins (top and bottom) to add spacing, else
+those margins get added to total height and your footer gets pushed down
+a bit more, creating vertical scroll bars in the browser */
+
+* {
+  margin:0;
+  padding:0;
+  font-family:Raleway;
+}
+
+/*logo*/
+.logo
+{
+    font-family:BLOGGER_1983_BRUSH;
+    color:white;
+    font-size: 60px;
+    position:absolute;
+    margin: 2px 5px;
+    text-shadow: 2px 2px rgba(80, 133, 165, 0.67);
+}
+
+nav {
+background-color: rgb(80, 133, 165);  
+box-shadow: 0px 0px 10px 2px #13394b;
+position: absolute;
+top: 0px;
+width: 100%;
+z-index: 1;
+  
+}
+
+
+.main-nav {
+  width: 100%;
+position:relative;
+}
+
+.main-nav ul {
+  display: flex;
+justify-content: center;
+margin: auto;
+    width:50%;
+    font-family: 'Roboto';
+}
+
+
+.main-nav li {
+  list-style: none;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  letter-spacing: .4rem;
+}
+
+
+.page-button {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 1.1em;
+
+}
+
+
+.page-button:hover{
+  box-shadow: 0px 0px 10px 2px #13394b;
+  padding: 10.5px;
+  background-color: #8fc1e3 ;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+
+}
+
+
+nav ul .active {
+  
+  box-shadow: 0px 0px 10px 2px #13394b;
+  border-radius: 5px;
+ 
+  background-color: #8fc1e3;
+  letter-spacing: .4rem;
+}
+
+
+  /*when the attribute aka the page button is active*/
+.active a { 
+  text-decoration: none ;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+footer {
+  bottom: -1200px;
+  height: 14rem;
+  position: absolute;
+  background-color: rgba(80, 133, 165,0.9);
+  width: 100%;
+}
+
+
+
+
+.footer-icons ul {        
+  display: flex; /* to display them next to each other*/
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(80, 133, 165,0.9);
+}
+
+
+.footer-icons ul li {
+    list-style: none; 
+    margin: 0 2rem; 
+  
+}
+
+
+.social-icon {  
+    margin-top: 0.75rem;
+    color: black;
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  
+}
+
+
+.footer-icons ul li a {   
+
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);    
+}
+
+.footer-icons  ul li a:hover {
+    transform: translate(0, -10px); /* the icon will move upwards */
+}
+
+
+.facebook:hover {
+  background-color: #3b5999;
+}
+.twitter:hover {
+  background-color: #55acee;
+}
+.instagram:hover {
+  background-color: #e4405f;
+}
+.youtube:hover {
+   background-color: #cd201f;
+}
+.linkedin:hover {
+    background-color: #0077B5;
+}
+
+
+.social-media-account h6 {
+  margin:0;
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: .1rem;
+}
+
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+footer hr {
+  height: 1px;
+  border: none;
+  width: 50%;
+  margin: auto;
+  background-color: rgb(163, 160, 160);
+  margin-top: 19px;
+}
+.footer-links {
+  padding: 1.5rem;
+  padding-bottom: 0; 
+}
+
+
+.footer-title {
+
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: .2rem; 
+  color: black;
+}
+
+.footer-links ul li {
+  
+  padding: 0.3rem;
+  list-style: none;
+  letter-spacing: .2rem; 
+  
+}
+
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+  
+}
+
+
+
+/*the bottom of the footer */
+
+.copy-rights {
+  padding: 1rem 1.5em;
+  background-color: #687864;
+}
+
+.copy-rights ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.copy-rights ul li {
+  margin: auto;
+
+}
+
+
+.copy-rights ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: .2rem;
+}
+
+/* search bar */
+
+.container {
+
+width: 200px;
+height: 45px;
+background-color: transparent;
+text-align: center;
+line-height: 48px;
+padding-right: 50px;
+border-radius: 5px;
+position: absolute;
+top: 0px;
+right: 0px;
+margin: 1px 65px;
+}
+
+.container:hover {
+  background-color: #8fc1e3;
+  transition: all 0.5s ease;
+}
+
+.input::placeholder{
+  color: white;
+}
+.input
+{
+	border: none;
+	border-bottom: 2px solid white;
+	background-color: transparent;
+	width: 90%;
+	padding: 5px 0px;
+	font-weight: bold;
+	transition: all 0.5s ease;
+  color: black;
+  
+}
+.icon-set
+{
+	position: absolute;
+  right: 15px;
+	top: 15px;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+  .footer-icons ul li { 
+    margin: 0  1rem; 
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  nav { 
+    height: 14rem; 
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .main-box
+  { 
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-nav ul {
+    margin-top: 1rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .container.active{ 
+	  width: 81%;	
+  }
+}
+
+@media (max-width: 600px) {
+  .social-media-account h6 {
+  font-size: 12px;
+  letter-spacing: .1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-footer {
+    display: block;
+    background-color: gray;
+    padding-bottom: 1rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .footer-title li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-title{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer hr{
+    margin-top: -0.1rem;
+  }
+}
+/*darkmode*/
+#check3
+{
+    display:none;
+}
+#dark
+{
+    display:flex;
+    background-color:#111;
+    border-radius:50px;
+    position:absolute;
+    height:26px;
+    justify-content:space-between;
+    align-items:center;
+    width:50px;
+    top:0;
+    right:0;
+    margin:15px 5px;  
+    padding:5px;
+    box-sizing:border-box;
+    z-index:1;
+}
+#ball
+{
+    background-color:#fff;
+    border-radius:50%;
+    position:absolute;
+    top:2px;
+    left:2px;
+    height:22px;
+    width:22px;
+    transition:all 0.3s ease;
+}
+#moon
+{
+    color:#f1c40f;
+}
+#sun
+{
+    color:#f39c12;
+}
+#check3:checked ~    header nav .main-nav #dark
+{
+    background-color:#fff;
+}
+#check3:checked ~    header nav .main-nav #dark #ball 
+{
+    background-color:#111;
+    transform:translatex(24px);
+}
+#check3:checked ~ header .main-nav .container
+{
+    background:black;
+    color:white;
+
+}
+#check3:checked ~ header .main-nav .container input
+{
+    color:#fff;
+
+}
+#check3:checked ~ header .main-nav .container:hover {
+   background-color: #31708e;
+   transition: all 0.5s ease;
+   box-shadow: 0px 0px 10px 2px black;
+}
+#check3:checked ~ header nav
+{
+    background: black;
+    transition:all 0.3s ease;
+}
+#check3:checked ~ footer ,#check3:checked ~ footer .footer-icons ul   
+{
+    background: black;
+    color:white;
+}
+#check3:checked ~ footer .main-footer .footer-links ul li a , #check3:checked ~ footer .main-footer .footer-links .footer-title
+{
+    color :white;
+}

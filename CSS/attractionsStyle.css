@@ -1,0 +1,213 @@
+
+*{
+  margin: 0;
+  padding: 0; 
+  font-family: Raleway;
+  box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.body{
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(90deg ,#8fc1e3 70%,#13394b 30%);
+    background-repeat: repeat;
+    width: 100%;
+    overflow-x: hidden;
+}
+.heading-text {
+  font-weight: 500;
+  text-align: center;
+  margin: 75px 0;
+}
+.heading-text:hover{
+  text-shadow: 0 0 10px #FFF;
+}
+.land-mark h3{
+  color: rgb(211, 231, 250);
+  font-weight: 300;
+  margin: 20px;
+  font-size: 30px;
+}
+.land-mark h3:hover{
+  color: black;
+  text-shadow: 0 0 10px #FFF;
+}
+.info{
+  width: 60%;
+  margin: 20px;
+  font-size: 20px;
+  text-align:justify;
+}
+iframe{
+  margin-left: 40%;
+  margin-right: 20%;
+  transform: translateY(-30%);
+}
+/*style of the people reviews*/
+.left-review{
+  font-size: 28px;
+  margin-left:2%;
+  transform: translate(12%,100%);
+}
+.review-title{
+  margin-left:55px;
+  font-size: 50px;
+}
+/*Style of the table progress review*/
+.can{
+    position:relative;
+    left:150px;
+    top:150px;
+}
+td{
+    font-weight:bold;
+}
+/* we have 4 places: each place has its own review, so we make a main class for all places and use the id for the 5 review of each place*/
+.progress {
+    background-color: whitesmoke;
+    width:305px;
+    height:20px;
+    border:1px solid black;
+    position:relative;
+    border:none;
+    margin: .3rem 0;
+    border-radius: 5px;
+}
+.progress:after {
+    content:'\A'; 
+    position:absolute;
+    background: #00a03e;
+    top: 0; bottom:0; left: 0;
+    width:30%; 
+    border-radius: 5px;
+}
+/* 5 reviews of place no.1*/
+#progress1A:after{
+    background: #ffa200;
+    width:60%; 
+    border-radius: 5px;
+}
+#progress2A:after {
+    background: #6abe83;
+    width:5%;
+    border-radius: 5px;
+}
+#progress3A:after {
+    background: #FFD800;
+    width:15%; 
+    border-radius: 5px;
+}
+#progress4A:after {
+    background: #E86850;
+    width:19%; 
+    border-radius: 5px;
+}
+/* 5 reviews of place no.2*/
+#progress1B:after{
+    background: #ffa200;
+    width:70%; 
+    border-radius: 5px;
+}
+#progress2B:after {
+    background: #6abe83;
+    width:10%;
+    border-radius: 5px;
+}
+#progress3B:after {
+    background: #FFD800;
+    width:15%; 
+    border-radius: 5px;
+}
+#progress4B:after {
+    background: #E86850;
+    width:40%; 
+    border-radius: 5px;
+}
+/* 5 reviews of place no.3*/
+#progress1C:after{
+    background: #ffa200;
+    width:60%; 
+    border-radius: 5px;
+}
+#progress2C:after {
+    background: #6abe83;
+    width:5%;
+    border-radius: 5px;
+}
+#progress3C:after {
+    background: #FFD800;
+    width:15%; 
+    border-radius: 5px;
+}
+#progress4C:after {
+    background: #E86850;
+    width:19%; 
+    border-radius: 5px;
+}
+/* 5 reviews of place no.4*/
+#progress1D:after{
+    background: #ffa200;
+    width:45%; 
+    border-radius: 5px;
+}
+#progress2D:after {
+    background: #6abe83;
+    width:9%;
+    border-radius: 5px;
+}
+#progress3D:after {
+    background: #FFD800;
+    width:20%; 
+    border-radius: 5px;
+}
+#progress4D:after {
+    background: #E86850;
+    width:90%; 
+    border-radius: 5px;
+}
+/*end of progress tables style*/
+
+/*scroll top button style*/
+#scroll-btn{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #8fc1e3;
+  border: none;
+  border-radius: 3px;
+  z-index: 1;
+}
+/*Dark mode*/
+#check3:checked ~ .body{
+     background: linear-gradient(90deg ,#090909 70%,#1e1e1e 30%);
+     background-repeat: repeat;
+    }
+#check3:checked ~ .body .heading-text{
+    color:#687864;
+}
+#check3:checked ~ .body .heading-text:hover{
+    text-shadow: 0 0 10px #1e1e1e;
+}
+#check3:checked ~ .body .land-mark p{
+    color:white;
+}
+#check3:checked ~ .body .land-mark .review-rating .left-review .review-title{
+    color:white;
+}
+#check3:checked ~ .body .land-mark .review-rating .left-review .review-star{
+    color:orange;
+}
+#check3:checked ~ .body .land-mark .review-rating .left-review .review-people{
+    color:white;
+}
+#check3:checked ~ .body #scroll-btn{
+  background: #687864;
+}/*end of dark mode*/

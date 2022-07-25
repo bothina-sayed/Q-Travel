@@ -1,0 +1,161 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Raleway;   
+}
+html{
+    font-size: 90%;
+}
+body{
+    box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 0;
+}
+
+.section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-book{
+    height: 100%;
+    background-image: linear-gradient(to right bottom,#f39c12,#696969);
+    background-repeat: repeat;
+}
+.book{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 98%;
+    background-image: linear-gradient(105deg,rgba(255,255,255,0.9)0%,rgba(255,255,255,0.9)50%,transparent 50%),url("../img/plane.jpg");
+    background-size: 100%;
+    background-position: right;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
+}
+.book-form{
+    width: 60%;
+    padding: 6rem;
+}
+.heading{
+    font-size: 3.5rem;
+    margin: 1rem;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+.form-group{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.form-input{
+    font-size: 1rem;
+    color: inherit;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    background-color: rgb(255, 234, 167);
+    border-bottom: 3px solid transparent;
+    border: none;
+    width:40%; 
+    height: 35px;
+    display: block;
+    transition: all 0.3s; 
+}
+.form-input:focus{
+    outline: none;
+    border-bottom: 3px solid #f39c12;
+    background-color: rgba(223, 230, 233,1.0);
+    transform: translateY(-1.2px);
+}
+.form-input:focus:invalid{
+    border-bottom: 3px solid #db3030;
+}
+.form-input::-webkit-input-placeholder{
+    color: gray;
+}
+#Name{
+    display: inline;
+}
+.form-control{
+    font-size: 1rem;
+    color: gray;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    background-color: rgb(255, 234, 167);
+    border-bottom: 3px solid transparent;
+    border: none;
+    width: 40%;
+    height: 35px;
+    display: block;
+    transition: all 0.3s;  
+}
+
+.form-label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 0.7rem;
+    margin-top: 0.3rem;
+    display: block;
+    transition: all 0.3s;
+}
+.form-radio-group{
+    width: 50%;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+.form-radio-input{
+    margin-right:10px;
+    margin-left: 40px;
+}
+.form-radio-label{
+    font-size: 1.3rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2rem;
+}
+button{
+   background-color: linear-gradient(rgba(255,255,255,0.9)0%,rgba(255,255,255,0.9)50%,transparent 50%);
+   border: 3px solid #696969;
+   border-radius: 20px;
+   color: #696969;
+   font-weight: bold;
+   margin-top: 10px;
+   margin-left: 40px;
+   height: 30px;
+   width: 150px;
+}
+button:hover{
+   border-color:#f39c12;
+   color:#f39c12;
+}
+.btn a{
+   text-decoration: none;
+   color:#1e1e1e;
+}
+/*dark mode*/
+#check3:checked ~    #dark
+{
+    background-color:#fff;
+}
+#check3:checked ~    #dark #ball 
+{
+    background-color:#111;
+    transform:translatex(24px);
+}
+#check3:checked ~ .section-book
+{
+    background-image: linear-gradient(to right bottom,#000,#3e2a03);
+    background-repeat: repeat;
+}
+#check3:checked ~ .section-book .book
+{
+    background-image: linear-gradient(105deg,rgba(0, 0, 0, 0.9)0%,rgba(0, 0, 0, 0.9)50%,transparent 50%),url("../img/plane.jpg");
+    background-size: 100%;
+    background-position: right;
+    color:#adadad;
+}
+#check3:checked ~ .section-book .book .form .form-group .btn
+{
+    background: #111;
+    
+}

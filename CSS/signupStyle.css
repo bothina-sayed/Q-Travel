@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+
+.frist
+{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/formBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    
+}
+.box
+{
+    width: 400px;
+    height: 460px;
+    position:relative;
+    background: #fff;
+    margin: 6% auto;
+    padding: 5px;
+    overflow: hidden;
+}
+.box-btn
+{
+    width: 200px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #cee1e5;
+    border-radius: 30px;
+    
+}
+.btn
+{
+    padding: 10px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-decoration: none;
+    
+}
+#btn-back
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    background: linear-gradient(to right, #2980b9,#f39c12);
+    border-radius: 30px;
+    transition: .5s;
+    
+}
+.sm-icons
+{
+    margin: 20px auto;
+    text-align: center;
+}
+.sm-icons img
+{
+    width: 130px;
+    height: 130px;
+    margin: 0 0 20px 0 #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.form
+{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.text-location
+{
+    width: 300px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    border-right: 0;
+    outline: none;
+    background: transparent;
+    
+}
+.submit
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#2980b9,#f39c12 );
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    
+}
+.submit a
+{
+   text-decoration: none;
+    color:#1e1e1e;
+}
+.check
+{
+    margin: 30px 10px 30px;
+}
+span 
+{
+    color: #777;
+    font-size: 17px;
+    bottom: 60px;
+    position: absolute;
+}
+#login
+{
+    left: 450px;
+}
+#signup
+{
+    left: 50px;
+}
+
+
+
+
+
+
+#check3:checked ~   #dark
+{
+    background-color:#fff;
+}
+#check3:checked ~   #dark #ball 
+{
+    background-color:#111;
+    transform:translatex(24px);
+}
+#check3:checked ~ .frist .box
+{
+    background:#1e1e1e;
+    color:#fff;
+    box-shadow: 0 0 20px 9px #000;
+    transition:all 0.3s ease;
+}
+#check3:checked ~ .frist .box .box-btn
+{
+    box-shadow: 0 0 20px 9px #000;
+    transition:all 0.3s ease;
+}
+#check3:checked ~ .frist .box .box-btn .btn
+{
+    color:#fff;
+    transition:all 0.3s ease;
+}
+#check3:checked ~ .frist .box .box-btn #btn-back
+{
+    background: linear-gradient(to right, #05273d,#010104);
+    transition:all 0.3s ease;
+}
+#check3:checked ~ .frist .box  .submit 
+{
+    background: linear-gradient(to right, #05273d,#010104);
+    transition:all 0.3s ease;
+}
+
+#check3:checked ~ .frist .box  .submit a
+{
+   text-decoration: none;
+    color:#fff;
+    transition:all 0.3s ease;
+}
+
+#check3:checked ~ .frist .box  .text-location
+{
+    color:#fff;
+    transition:all 0.3s ease;
+}
+@font-face{
+    font-family:Raleway;
+    src: url(Raleway-light.ttf);
+    
+    
+}
+html{
+    font-size: 90%;
+}

@@ -1,0 +1,169 @@
+
+body
+
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.body
+
+{ 
+
+    background-color: #8fc1e3;
+    width: 100%;
+    min-height:100vh;
+
+}
+.services {
+ 
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+} 
+
+heading-services{
+
+    width: 10%;
+  
+    height: 5px;
+  
+    background-color:#31708e;
+  
+    margin: auto;
+  
+    border: none;
+  
+     }
+hr {
+  
+      width: 10%;
+  
+      height: 5px;
+  
+      background-color: #31708e;
+  
+      margin: auto;
+  
+      border: none;
+  
+      margin-bottom: 5px;
+  
+    }
+.service {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  padding: 10px;
+  width: 300px;
+
+}
+
+.service-icon{
+
+  display: flex;
+  position: relative;
+  height: 400px;
+  justify-content: center;
+  align-content: center;
+  width: 300px;
+  background: linear-gradient(to right,rgba(80, 133, 165,0.3), #13394b);	margin-top: 2rem;
+	z-index:99;
+	text-align:center;
+	border-radius:10px;
+	box-shadow:0px -9px 10px rgba(0,0,0,0.2);
+	transform:translateY(50px);
+	transition:1s;
+   }
+    
+.service-icon i{
+	 line-height:200px;
+	 text-align:center;
+	 color:white;
+	 font-size:90px;
+	}
+	
+	
+	.service-content{
+    position:absolute;
+    margin-top: -16rem;
+	   width:250px;
+	   padding:28px 25px;
+	   border-radius:10px;
+	   background: #13394b;
+	   box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+	   transform:translateY(55%);
+	   transition:1s;
+	}
+   
+   .service-content > h4{
+   font-family:'oswald',sans-serif;
+   color:white;
+   font-size:20px;
+   text-transform:uppercase;
+   font-weight:lighter;
+   padding:0px;
+   margin:0px;
+   }
+   
+  .service-content > p{
+   color:white;
+   font-size:14px;
+   padding:0px 0px 15px 0px;
+   margin:0px;
+   text-align:center;
+   }
+  
+  
+  .arrow{
+   position:absolute;
+   bottom:15px;
+   left:50%;
+   transform:translatex(-50%);
+   width:40px;
+   height:20px;
+   z-index:333;
+   cursor:pointer;
+
+  }
+  
+  
+  .arrow > i{
+   font-size:30px;
+   color:white;
+   cursor:pointer;
+   transition:0.5s;
+  }
+  
+   .active-service.service-icon{
+     
+    transform:translateY(-5%);
+   }
+  
+  
+  .active-service{
+   transform:translateY(100%);
+  }
+  
+  .rotate{
+   transform:rotate(180deg);
+   transform-origin:center center;
+  }
+  
+  
+  #check3:checked ~  header .main-nav #dark
+  {
+      background-color:#fff;
+  }
+  #check3:checked ~  header .main-nav #dark #ball 
+  {
+      background-color:#111;
+      transform:translatex(24px);
+  }
+  #check3:checked ~ .body
+  {
+      background:#1e1e1e;
+      transition:all 0.3s ease;
+  }
+ 
